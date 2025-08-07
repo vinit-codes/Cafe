@@ -2,6 +2,10 @@
 
 A modern, responsive café website showcasing BrewHaven's offerings, customer experiences, and café culture. Built with Next.js 13, TypeScript, and Tailwind CSS, featuring smooth animations and a dark mode.
 
+## 🌐 Live Demo
+
+Experience the website live at [BrewHaven Café](https://cafe-five-neon.vercel.app/)
+
 ## ✨ Features
 
 - **Dynamic Hero Carousel** - Auto-rotating showcase of café ambiance and offerings
@@ -115,7 +119,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-Project Link: [https://github.com/yourusername/brewhaven](https://github.com/yourusername/brewhaven)
+Project Link: [https://github.com/vinit-codes/cafe](https://github.com/vinit-codes/cafe)
+Live Demo: [https://cafe-five-neon.vercel.app/](https://cafe-five-neon.vercel.app/)
 
 ## 🙏 Acknowledgments
 
