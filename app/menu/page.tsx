@@ -30,16 +30,16 @@ export default function Menu() {
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-heading text-5xl md:text-6xl font-bold text-white text-center mb-4">
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold text-white text-center mb-4">
               Our Menu
             </h1>
-            <p className="font-body text-xl text-white/90 text-center max-w-2xl">
+            <p className="font-body text-base sm:text-xl text-white/90 text-center max-w-2xl mx-auto">
               Crafted with love, served with passion
             </p>
           </motion.div>
@@ -50,12 +50,12 @@ export default function Menu() {
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex justify-center mb-12">
           <div className="bg-white dark:bg-card rounded-2xl p-2 shadow-lg">
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap justify-center gap-2">
               {categories.map((category) => (
                 <motion.button
                   key={category}
                   onClick={() => setActiveTab(category)}
-                  className={`px-6 py-3 rounded-xl font-body font-semibold transition-colors capitalize ${
+                  className={`px-4 py-2 text-sm sm:px-6 sm:py-3 rounded-xl font-body font-semibold transition-colors capitalize ${
                     activeTab === category
                       ? 'bg-gold text-dark-brown'
                       : 'text-dark-brown/60 dark:text-cream/60 hover:text-gold dark:hover:text-amber'
@@ -74,7 +74,7 @@ export default function Menu() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -104,11 +104,11 @@ export default function Menu() {
                   )}
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="font-heading text-xl font-bold text-dark-brown dark:text-cream mb-2">
+                <div className="p-4 sm:p-6">
+                  <h3 className="font-heading text-lg sm:text-xl font-bold text-dark-brown dark:text-cream mb-2">
                     {item.name}
                   </h3>
-                  <p className="font-body text-dark-brown/70 dark:text-cream/70 mb-4 leading-relaxed">
+                  <p className="font-body text-dark-brown/70 dark:text-cream/70 mb-4 leading-relaxed text-sm sm:text-base">
                     {item.description}
                   </p>
                   
@@ -128,11 +128,11 @@ export default function Menu() {
                   )}
                   
                   <div className="flex justify-between items-center">
-                    <span className="font-heading text-2xl font-bold text-gold">
+                    <span className="font-heading text-xl sm:text-2xl font-bold text-gold">
                       ${item.price.toFixed(2)}
                     </span>
                     <motion.button
-                      className="bg-gold hover:bg-amber text-dark-brown font-semibold px-4 py-2 rounded-lg transition-colors"
+                      className="bg-gold hover:bg-amber text-dark-brown font-semibold px-3 sm:px-4 py-2 rounded-lg transition-colors text-sm sm:text-base"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -147,24 +147,24 @@ export default function Menu() {
       </section>
 
       {/* Dietary Information */}
-      <section className="py-16 bg-secondary/30 dark:bg-dark-brown/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 bg-secondary/30 dark:bg-dark-brown/10 px-4">
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="font-heading text-2xl font-bold text-dark-brown dark:text-cream mb-6">
+            <h3 className="font-heading text-xl sm:text-2xl font-bold text-dark-brown dark:text-cream mb-6">
               Dietary Information
             </h3>
-            <div className="flex flex-wrap justify-center gap-6 font-body text-dark-brown/70 dark:text-cream/70">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 font-body text-dark-brown/70 dark:text-cream/70 text-sm sm:text-base">
               <span>🥬 Vegetarian</span>
               <span>🌱 Vegan</span>
               <span>🌾 Gluten-Free</span>
               <span>* Available upon request</span>
             </div>
-            <p className="mt-4 text-sm text-dark-brown/60 dark:text-cream/60">
+            <p className="mt-4 text-xs sm:text-sm text-dark-brown/60 dark:text-cream/60">
               Please inform our staff of any allergies or dietary requirements
             </p>
           </motion.div>
