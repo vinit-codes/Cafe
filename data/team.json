@@ -1,0 +1,25 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Sam Rodriguez",
+      "role": "Head Barista",
+      "bio": "With 8 years of experience, Sam brings expertise in specialty coffee brewing and latte art. Passionate about educating customers on coffee origins and brewing techniques.",
+      "image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Maria Gonzalez",
+      "role": "Executive Chef",
+      "bio": "Maria creates our artisanal menu with locally sourced ingredients. Her background in French pastry and modern cuisine brings unique flavors to every dish.",
+      "image": "https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "David Kim",
+      "role": "Store Manager",
+      "bio": "David ensures every customer has an exceptional experience at BrewHaven. His attention to detail and warm personality make every visit memorable.",
+      "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+    }
+  ]
+}

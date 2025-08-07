@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 245 245 220; /* cream */
+    --foreground: 139 69 19; /* dark brown */
+    --card: 255 255 255;
+    --card-foreground: 139 69 19;
+    --popover: 255 255 255;
+    --popover-foreground: 139 69 19;
+    --primary: 212 165 116; /* gold */
+    --primary-foreground: 255 255 255;
+    --secondary: 250 240 230;
+    --secondary-foreground: 139 69 19;
+    --muted: 245 240 235;
+    --muted-foreground: 160 135 115;
+    --accent: 212 165 116;
+    --accent-foreground: 255 255 255;
+    --destructive: 185 28 28;
+    --destructive-foreground: 255 255 255;
+    --border: 220 215 210;
+    --input: 220 215 210;
+    --ring: 212 165 116;
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 139 69 19; /* dark brown */
+    --foreground: 245 245 220; /* cream */
+    --card: 101 67 33;
+    --card-foreground: 245 245 220;
+    --popover: 101 67 33;
+    --popover-foreground: 245 245 220;
+    --primary: 255 193 7; /* amber */
+    --primary-foreground: 139 69 19;
+    --secondary: 120 80 40;
+    --secondary-foreground: 245 245 220;
+    --muted: 110 75 45;
+    --muted-foreground: 200 180 160;
+    --accent: 255 193 7;
+    --accent-foreground: 139 69 19;
+    --destructive: 185 28 28;
+    --destructive-foreground: 245 245 220;
+    --border: 120 80 40;
+    --input: 120 80 40;
+    --ring: 255 193 7;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(139, 69, 19, 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-playfair);
+  }
+  
+  .font-body {
+    font-family: var(--font-lora);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #D4A574, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-cream {
+    background-color: #F5F5DC;
+  }
+  
+  .bg-dark-brown {
+    background-color: #8B4513;
+  }
+  
+  .text-dark-brown {
+    color: #8B4513;
+  }
+  
+  .text-cream {
+    color: #F5F5DC;
+  }
+  
+  .text-gold {
+    color: #D4A574;
+  }
+  
+  .border-gold {
+    border-color: #D4A574;
+  }
+  
+  .bg-gold {
+    background-color: #D4A574;
+  }
+  
+  .steam-animation {
+    animation: steam 2s ease-in-out infinite;
+  }
+  
+  @keyframes steam {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+    50% { transform: translateY(-10px) scale(1.1); opacity: 1; }
+  }
+  
+  .gradient-border {
+    background: linear-gradient(45deg, #D4A574, #8B4513, #D4A574);
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+/* Custom cursor */
+body {
+  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGVsbGlwc2UgY3g9IjEyIiBjeT0iMTIiIHJ4PSI2IiByeT0iOCIgZmlsbD0iIzhCNDUxMyIgb3BhY2l0eT0iMC44Ii8+CjxlbGxpcHNlIGN4PSIxMiIgY3k9IjEyIiByeD0iNCIgcnk9IjYiIGZpbGw9IiNENEE1NzQiLz4KPHN2Zz4K") 12 12, auto;
+}
+
+a:hover, button:hover {
+  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGVsbGlwc2UgY3g9IjEyIiBjeT0iMTIiIHJ4PSI4IiByeT0iMTAiIGZpbGw9IiNENEE1NzQiIG9wYWNpdHk9IjAuOSIvPgo8ZWxsaXBzZSBjeD0iMTIiIGN5PSIxMiIgcng9IjUiIHJ5PSI3IiBmaWxsPSIjOEI0NTEzIi8+Cjwvc3ZnPgo=") 12 12, pointer;
+}

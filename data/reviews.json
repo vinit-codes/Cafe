@@ -1,0 +1,28 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "rating": 5,
+      "comment": "Absolutely love this place! The atmosphere is perfect for working or catching up with friends. Their lavender honey latte is to die for!",
+      "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "rating": 5,
+      "comment": "Best coffee in town, hands down. The baristas really know their craft, and the pastries are always fresh. My morning routine isn't complete without stopping by!",
+      "image": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      "date": "2024-01-12"
+    },
+    {
+      "id": 3,
+      "name": "Emma Rodriguez",
+      "rating": 4,
+      "comment": "Cozy atmosphere with excellent coffee. The avocado toast is amazing! Perfect spot for a weekend brunch. The only downside is it gets quite busy on weekends.",
+      "image": "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      "date": "2024-01-10"
+    }
+  ]
+}
